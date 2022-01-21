@@ -7,7 +7,8 @@
     <title>Microsite Kiosk</title>
 </head>
 <body>
-    <button>Click me</buton>
+    <h1>Prudential Dev</h1>
+    <button>Click me to send message from Microsite ReactJS</buton>
 </body>
 <script>
     let counter = 0;
@@ -15,6 +16,7 @@
         counter++;
         alert("Hello! I am an alert box!");
         console.log('clicked', counter);
+        window.postMessage("Hello React", "*");
     });
 </script>
 </html>
