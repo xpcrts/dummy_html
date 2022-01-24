@@ -17,7 +17,16 @@
         // alert("Hello! I am an alert box!");
         console.log('clicked', counter);
         // window.postMessage("Hello React", "*");
-        window.ReactNativeWebView.postMessage("hello react working");
+        window.ReactNativeWebView.postMessage({
+    productName: "PruMySafety",
+    packageName: "Full Essential",
+    policyNumber: "D00000001",
+    lifeAssured: "Life Name",
+    discount: 0,
+    premium: 5.67,
+    totalPremium: 5.67,
+    currency: "USD"
+});
     });
 </script>
 </html>
