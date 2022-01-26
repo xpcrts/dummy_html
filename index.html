@@ -13,6 +13,9 @@
 </body>
 <script>
     let counter = 0;
+    receiveFromNative = function(data) {
+        alert(data);
+    }
     document.querySelector('button').addEventListener('click', () => {
         counter++;
         // alert("Hello! I am an alert box!");
